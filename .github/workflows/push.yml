@@ -11,11 +11,9 @@ jobs:
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v3
-      # run – произвольная bash-команда
-      # ls -la выведет содержимое текущего репозитория
-      - name: build
-        run: make build
       - name: test
         run: make ci
-      - name: test
+      - name: build
+        run: make ci
+      - name: push
         run: make push

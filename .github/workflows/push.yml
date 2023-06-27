@@ -11,9 +11,9 @@ jobs:
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v3
-      - name: test
-        run: make ci
       - name: build
+        run: make ci
+      - name: test
         run: make ci
       - name: push
         run: make push

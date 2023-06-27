@@ -2,6 +2,7 @@ services:
   app:
     image: deathzzz/devops-for-programmers-project-74
     build:
+      context: .
       dockerfile: Dockerfile
     command: npm run dev
     ports:

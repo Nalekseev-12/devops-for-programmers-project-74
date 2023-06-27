@@ -19,6 +19,8 @@ jobs:
             password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: build
         run: make build
+      - name: Install sequelize
+        run: npm install -g sequelize-cli
       - name: test
         run: make ci
       - name: push

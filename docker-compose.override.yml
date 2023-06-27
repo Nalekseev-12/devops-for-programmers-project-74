@@ -1,5 +1,8 @@
 services:
   app:
+    image: deathzzz/devops-for-programmers-project-74
+    build:
+      dockerfile: Dockerfile
     command: npm run dev
     ports:
       - 8080:8080

@@ -17,11 +17,11 @@ jobs:
         with:
             username: ${{ secrets.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: build
-        run: make build
-      - name: Install sequelize
-        run: npm install -g sequelize-cli
+      - name: Install seq
+        run: npm install sequenceize
       - name: test
         run: make ci
+      - name: build
+        run: make build
       - name: push
         run: make push

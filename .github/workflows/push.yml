@@ -25,6 +25,7 @@ jobs:
         run: ls
       - name: Install Dependencies
         run: npm ci
+        working-directory: app
       - name: test
         run: make ci
       - name: build

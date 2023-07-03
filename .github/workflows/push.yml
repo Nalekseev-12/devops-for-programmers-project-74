@@ -24,6 +24,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
         working-directory: app
+      - name: prepare env
+        run: make env
       - name: build
         run: make build
       - name: test

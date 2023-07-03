@@ -1,5 +1,7 @@
 env:
 	cp -n ./app/.env.example .env
+dependencies:
+	docker-compose run --rm app npm ci
 build:
 	docker-compose -f docker-compose.yml build app
 ci:

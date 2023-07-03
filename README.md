@@ -12,6 +12,7 @@
 **Run**
 
 ```bash
+make dependencies # install dependencies
 make build # build app
 make ci # run tests
 make start # run server

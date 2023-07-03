@@ -1,5 +1,5 @@
 env:
-	cp -n .env.example .env
+	cp -n ./app/.env.example .env
 build:
 	docker-compose -f docker-compose.yml build app
 ci:
